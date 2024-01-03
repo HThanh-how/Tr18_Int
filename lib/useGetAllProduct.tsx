@@ -26,7 +26,7 @@ import { Shoe, Response } from "./InterfaceProduct";
 
 
 const GetApiData = () => {
-    const url = "http://localhost:3000/api";
+    const url = "https://tr18-int.vercel.app/api";
     const [data, setData] = useState<Shoe[]>([]);
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
