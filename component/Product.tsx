@@ -1,5 +1,5 @@
 import { Button, Box, Image, AspectRatio } from "@chakra-ui/react";
-import { Shoe } from "@/lib/InterfaceProduct";
+import { Shoe } from "@/pages/api/InterfaceProduct";
 
 // const data = {
 //   color: "yellow",
