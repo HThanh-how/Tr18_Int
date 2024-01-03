@@ -25,7 +25,7 @@ import { Shoe, Response } from "./InterfaceProduct";
 
 
 
-const getApiData = () => {
+const GetApiData = () => {
     const url = "http://localhost:3000/api";
     const [data, setData] = useState<Shoe[]>([]);
     const [isLoading, setIsLoading] = useState(false);
@@ -57,4 +57,4 @@ const getApiData = () => {
     return [{ data, isLoading, isError }];
   };
   
-  export default getApiData;
+  export default GetApiData;
