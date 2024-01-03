@@ -1,5 +1,6 @@
 import { Box, Flex, Text, SimpleGrid, Image } from "@chakra-ui/react";
 import Product from "./Product";
+import Cart from "./Cart";
 export default function Home() {
   return (
     <Box
@@ -46,10 +47,7 @@ export default function Home() {
           scrollbar-width: none; /* Firefox */
         `}
       >
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+        <Cart/>
       </Box>
     </Box>
   );

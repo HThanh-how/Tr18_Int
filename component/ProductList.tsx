@@ -1,6 +1,11 @@
+"use client";
 import { Box, Flex, Text, SimpleGrid, Image } from "@chakra-ui/react";
+import getAllProduct from "../lib/getAllProduct";
 import Product from "../component/Product";
 export default function Home() {
+  const [{ data, isLoading, isError }] = getAllProduct();
+  console.log(data);
+  
   return (
     <Box
       w={{ base: "90vw", md: "15vw" }}
@@ -46,10 +51,9 @@ export default function Home() {
           scrollbar-width: none; /* Firefox */
         `}
       >
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+        {data?.map((shoe) => (
+          <Product key={shoe.id} data={shoe} />
+        ))}
       </Box>
     </Box>
   );

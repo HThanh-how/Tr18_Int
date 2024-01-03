@@ -9,9 +9,25 @@ export default function Home() {
       justifyContent="center"
       alignItems="center"
       py={8}
-      background={`linear-gradient(to bottom, #ffffff00, #ffffff),
-                   radial-gradient(circle, #00beb670, transparent)`}
-      backgroundBlendMode="normal, screen"
+
+      _before={{
+        content: '""',
+        display: "block",
+        position: "fixed",
+        width: "300%",
+        height: "100%",
+        top: "50%",
+        left: "50%",
+        borderRadius: "full",
+        transform: "translateX(-50%) skewY(-8deg)",
+        bgColor: "#f6c90e",
+        zIndex: -1,
+        animation: "wave 8s ease-in-out infinite alternate",
+      }}
+
+      // background={`linear-gradient(to bottom, #ffffff00, #ffffff),
+      //              radial-gradient(circle, #00beb670, transparent)`}
+      // backgroundBlendMode="normal, screen"
       position="relative"
     >
 

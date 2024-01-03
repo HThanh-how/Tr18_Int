@@ -26,14 +26,11 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-
-@keyframes wave{
-  0%
-  {
-    transform:translateX(-50%) skew(0deg,-8deg)
+@keyframes wave {
+  0% {
+    transform: translateX(-50%) skew(0deg, -8deg);
   }
-  to
-  {
-    transform:translateX(-30%) skew(8deg,-4deg)
+  to {
+    transform: translateX(-30%) skew(8deg, -4deg);
   }
 }

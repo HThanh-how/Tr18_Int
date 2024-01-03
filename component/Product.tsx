@@ -1,16 +1,17 @@
 import { Button, Box, Image, AspectRatio } from "@chakra-ui/react";
+import { Shoe } from "@/lib/InterfaceProduct";
 
-const data = {
-  color: "yellow",
-  image:
-    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/zoom-fly-3-premium-mens-running-shoe-XhzpPH-removebg-preview.png",
-  name: "Nike Newton",
-  description:
-    "The iconic Nike Air Zoom Pegasus 36 offers more cooling and mesh that targets breathability across high-heat areas. A slimmer heel collar and tongue reduce bulk, while exposed cables give you a snug fit at higher speeds.",
-  price: 200,
-};
+// const data = {
+//   color: "yellow",
+//   image:
+//     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/zoom-fly-3-premium-mens-running-shoe-XhzpPH-removebg-preview.png",
+//   name: "Nike Newton",
+//   description:
+//     "The iconic Nike Air Zoom Pegasus 36 offers more cooling and mesh that targets breathability across high-heat areas. A slimmer heel collar and tongue reduce bulk, while exposed cables give you a snug fit at higher speeds.",
+//   price: 200,
+// };
 
-export default function SingleShoes() {
+export default function SingleShoes({ data }: { data: Shoe }){
   return (
     <Box pb={10} >
         <AspectRatio  ratio={1}>
