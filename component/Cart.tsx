@@ -1,6 +1,6 @@
 "use client";
 import { Box, Flex, Text, SimpleGrid, Image, Button } from "@chakra-ui/react";
-import getAllProduct from "../lib/getAllProduct";
+import getAllProduct from "../lib/useGetAllProduct";
 import Product from "../component/Product";
 
 const data = {

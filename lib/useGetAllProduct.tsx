@@ -3,7 +3,7 @@
 import axios from 'axios';
 import { useEffect, useState } from "react";
 
-import { Shoe, Response } from "../pages/api/InterfaceProduct";
+import { Shoe, Response } from "./InterfaceProduct";
 
 // async function getApiData() {
 //   try {

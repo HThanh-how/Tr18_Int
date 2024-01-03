@@ -1,6 +1,6 @@
 "use client";
 import { Box, Flex, Text, SimpleGrid, Image } from "@chakra-ui/react";
-import getAllProduct from "../lib/getAllProduct";
+import getAllProduct from "../lib/useGetAllProduct";
 import Product from "../component/Product";
 export default function Home() {
   const [{ data, isLoading, isError }] = getAllProduct();
